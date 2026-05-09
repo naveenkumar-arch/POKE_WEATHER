@@ -2,8 +2,6 @@
 
 > Real weather. Real Pokémon. A futuristic cyberpunk weather app that matches your city's weather to a Pokémon.
 
-![PokeWeather Banner](https://raw.githubusercontent.com/naveenkumar-arch/POKE_WEATHER/main/public/banner.png)
-
 ## 🌐 Live Demo
 
 **[▶ Open PokeWeather](https://naveenkumar-arch.github.io/POKE_WEATHER/)**
@@ -15,7 +13,7 @@
 Search any city → get live weather → see the matching Pokémon with full stats, animated background effects, and a Pokémon cry button.
 
 | Weather | Pokémon |
-|---------|---------|
+|---|---|
 | ☀️ Clear | Charizard |
 | 🌧️ Rain | Squirtle |
 | ⛈️ Thunderstorm | Pikachu |
@@ -46,7 +44,7 @@ Search any city → get live weather → see the matching Pokémon with full sta
 ## 🛠️ Tech Stack
 
 | Tool | Purpose |
-|------|---------|
+|---|---|
 | React 18 | UI framework |
 | Vite | Build tool |
 | Tailwind CSS v4 | Styling |
@@ -59,26 +57,32 @@ Search any city → get live weather → see the matching Pokémon with full sta
 ## 🚀 Run Locally
 
 ### 1. Clone the repo
+
 ```bash
 git clone https://github.com/naveenkumar-arch/POKE_WEATHER.git
 cd POKE_WEATHER
 ```
 
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Add your API key
+
 Create a `.env` file in the root:
+
 ```env
 VITE_WEATHER_API_KEY=your_openweathermap_api_key_here
 ```
+
 Get a free key at [openweathermap.org/api](https://openweathermap.org/api)
 
 > **Note:** New API keys take up to 2 hours to activate. The app runs in demo mode until then.
 
 ### 4. Start the dev server
+
 ```bash
 npm run dev
 ```
@@ -92,22 +96,22 @@ Open [http://localhost:5173](http://localhost:5173)
 ```
 src/
 ├── components/
-│   ├── SearchBar.jsx        # City search input
-│   ├── WeatherCard.jsx      # Weather info display
-│   ├── PokemonCard.jsx      # Pokémon details card
-│   ├── StatBar.jsx          # Animated stat bars
-│   ├── WeatherParticles.jsx # Rain/snow/lightning effects
-│   ├── LoadingSpinner.jsx   # Loading animation
-│   ├── ErrorMessage.jsx     # Error display
-│   └── ThemeToggle.jsx      # Dark/light mode button
+│   ├── SearchBar.jsx         # City search input
+│   ├── WeatherCard.jsx       # Weather info display
+│   ├── PokemonCard.jsx       # Pokémon details card
+│   ├── StatBar.jsx           # Animated stat bars
+│   ├── WeatherParticles.jsx  # Rain/snow/lightning effects
+│   ├── LoadingSpinner.jsx    # Loading animation
+│   ├── ErrorMessage.jsx      # Error display
+│   └── ThemeToggle.jsx       # Dark/light mode button
 ├── hooks/
-│   └── usePokeWeather.js    # Main data-fetching hook
+│   └── usePokeWeather.js     # Main data-fetching hook
 ├── services/
-│   ├── weatherService.js    # OpenWeatherMap API calls
-│   └── pokemonService.js    # PokéAPI calls
+│   ├── weatherService.js     # OpenWeatherMap API calls
+│   └── pokemonService.js     # PokéAPI calls
 └── utils/
-    ├── weatherMapping.js    # Weather → Pokémon mapping
-    └── pokemonFacts.js      # Random Pokémon facts
+    ├── weatherMapping.js     # Weather → Pokémon mapping
+    └── pokemonFacts.js       # Random Pokémon facts
 ```
 
 ---
@@ -115,23 +119,25 @@ src/
 ## 🔑 Environment Variables
 
 | Variable | Description |
-|----------|-------------|
+|---|---|
 | `VITE_WEATHER_API_KEY` | Your OpenWeatherMap API key |
+
+> **Never commit your `.env` file.** Add it to `.gitignore` to keep your API key private.
 
 ---
 
 ## 📸 Screenshots
 
-### Clear Weather → Charizard
+### ☀️ Clear Weather → Charizard
 Sunny golden neon theme with glowing sun effect.
 
-### Rain → Squirtle
+### 🌧️ Rain → Squirtle
 Blue neon theme with animated falling rain particles.
 
-### Thunderstorm → Pikachu
+### ⛈️ Thunderstorm → Pikachu
 Purple neon theme with lightning flash overlay.
 
-### Snow → Glaceon
+### ❄️ Snow → Glaceon
 Ice blue theme with falling snowflake particles.
 
 ---
